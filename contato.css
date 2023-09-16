@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #ffcc00;
+
+}
+
+#logo {
+    width: 85px;
+    height: auto;
+}
+
+.main-contact {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.left-contact {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-contact h1 {
+    font-size: 3vw;
+    color:#ffcc00;
+}
+
+.left-contact-image {
+    width: 25vw; 
+    padding-top: 50px;
+}
+
+.right-contact {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+}
+
+.card-contact {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px white;
+    
+}
+
+.card-contact, h1 {
+    color:#ffcc00;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+    color: #ffcc00;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px black;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield label {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.textfield input::placeholder{
+    color: black;
+}
+
+.textfield textarea{
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+    color: #ffcc00;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px black;
+    outline: none;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.textfield textarea::placeholder{
+    color: black;
+}
+
+.btn-contact{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: white;
+    background: #ffcc00;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px black;
+    transition: 2s;
+}
+
+.btn-contact:hover{
+    background: black;
+    color: #ffcc00;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none; 
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .card-contact{
+        width: 85%;
+    }
+}
+
+@media (max-width:480px) {
+    .footer-navigation {
+        display: block; 
+    }
+
+    nav {
+        display: none;
+    }
+
+    .main-contact{
+        flex-direction: column;
+    }
+
+    .contact-text{
+        display: none;
+    }
+
+    .left-contact{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-contact{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width:375px) {
+    .left-contact-image {
+        padding-top: 300px;
+    }
+
+    footer{
+        padding-top: 300px;
+    }
+
+}
+
+
+
